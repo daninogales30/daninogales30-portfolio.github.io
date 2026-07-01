@@ -1,0 +1,53 @@
+.experience {
+  padding: 96px 24px;
+  background: var(--bg);
+}
+
+.experience h2 {
+  text-align: center;
+  font-size: 36px;
+  font-weight: 600;
+  color: var(--text-h);
+  margin-bottom: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+
+.experience .section-icon {
+  color: var(--accent);
+  font-size: 28px;
+}
+
+.timeline {
+  max-width: 700px;
+  margin: 0 auto;
+  position: relative;
+  padding-left: 32px;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 7px;
+  top: 8px;
+  bottom: 8px;
+  width: 2px;
+  background: var(--border);
+}
+
+@media (max-width: 1024px) {
+  .experience {
+    padding: 64px 16px;
+  }
+
+  .experience h2 {
+    font-size: 28px;
+    margin-bottom: 40px;
+  }
+
+  .timeline {
+    padding-left: 28px;
+  }
+}

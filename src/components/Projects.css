@@ -1,0 +1,45 @@
+.projects {
+  padding: 96px 24px;
+  background: var(--bg-alt);
+}
+
+.projects h2 {
+  text-align: center;
+  font-size: 36px;
+  font-weight: 600;
+  color: var(--text-h);
+  margin-bottom: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+
+.section-icon {
+  color: var(--accent);
+  font-size: 28px;
+}
+
+.projects-grid {
+  max-width: 900px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
+@media (max-width: 1024px) {
+  .projects {
+    padding: 64px 16px;
+  }
+
+  .projects h2 {
+    font-size: 28px;
+    margin-bottom: 32px;
+  }
+
+  .projects-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+}
