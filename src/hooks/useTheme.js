@@ -5,9 +5,9 @@ export function useTheme() {
         if (typeof window !== 'undefined') {
             const stored = localStorage.getItem('theme')
             if (stored) return stored
-            return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'
+            return 'dark'
         }
-        return 'light'
+        return 'dark'
     })
 
     useEffect(() => {
